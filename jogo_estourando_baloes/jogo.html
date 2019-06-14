@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Estourando balões</title>
+
+		<script src="jogo.js"></script>
+
+	</head>
+
+	<body onload="inicia_jogo()">
+
+		<!-- Área lateral do jogo-->
+		<div style="float: left;
+					width: auto;
+					height: 500px;
+					background: #FFF;
+					border: solid 1px #A2A2A2;
+					margin-right: 5px;">
+
+			<!-- Contador de balões -->
+			<table border="0">
+				<tr>
+					<td>
+						<img src="imagens/balao_azul_grande.png" />
+					</td>
+					<td>
+						<!--Elemento que vai receber o número de balões inteiros -->
+						<span id="baloes_inteiros" style="font-size: 40px;"></span>
+					</td>
+				</tr>
+			</table>
+			
+			<br>
+
+			<!-- Contador de balões estourados -->
+			<table border="0">	
+				<tr>
+					<td>
+						<img src="imagens/balao_azul_grande_estourado.png" />
+					</td>
+					<td>
+						<!--Elemento que vai receber o número de balões estourados -->
+						<span id="baloes_estourados" style="font-size: 40px;"></span>
+					</td>
+				</tr>
+				
+			</table>
+
+			<br>
+
+			<!-- Contador de tempo -->
+			<table border="0" style="width: 140px; height: 132px;">	
+				<tr>
+					<td style="background-image: url('imagens/cronometro.png'); text-align: center;">
+						
+						<!--Elemento para mostrar a contagem do tempo -->
+						<span id="cronometro" style="color: red;
+						font-size: 30px;"></span>
+					</td>
+				</tr>
+				
+			</table>
+
+			<!--Botão voltar -->
+			<table border="0">	
+				<tr>
+					<td>
+						<button onclick="window.location.href = 'index.html'">Voltar</button>
+					</td>
+				</tr>
+				
+			</table> 
+		</div>
+
+		<!-- Tela do Jogo-->
+		<div  id="cenario" style="float: left; width: 600px; height: 500px; background: url('imagens/cenario.png'); background-position: bottom;">
+			
+		</div>
+	</body>
+	
+</html>
